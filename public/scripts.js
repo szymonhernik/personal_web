@@ -4,31 +4,45 @@ window.addEventListener('DOMContentLoaded', (event) => {
   // ABOUT BUTTON SHOW AND CLOSE //
   // ABOUT BUTTON SHOW AND CLOSE //
 
-  let aboutButton = document.getElementById("about-button")
+  let aboutButton = document.getElementById("about-switch")
   let aboutSection = document.getElementById("about-section")
   let closeAbout = document.getElementById("about-close")
+  let nav = document.querySelector("nav")
+  let main = document.querySelector("main")
 
   let drawings = document.querySelectorAll(".hi-2-u")
+  let drawingFace = document.querySelector(".hi-2-u-left")
 
   document.querySelectorAll(".hi-2-u-right").forEach((drawing) => {
+
     aboutButton.addEventListener("mouseover", function(event) {
-      drawing.classList.add("in_view");
-    }, false);
-    aboutButton.addEventListener("click", function(event) {
-      drawing.classList.remove("in_view");
-    }, false);
+      drawing.classList.add("in_view")
+      nav.classList.add("cover-page")
+      main.classList.add("cover-page-main")
+      drawingFace.classList.add("hi-2-u-left-higher")
+    }, false)
+    closeAbout.addEventListener("click", function(event) {
+      drawing.classList.remove("in_view")
+      nav.classList.remove("cover-page")
+      main.classList.remove("cover-page-main")
+      drawingFace.classList.remove("hi-2-u-left-higher")
+
+
+    }, false)
   })
 
   aboutButton.addEventListener("mouseover", function(event) {
-    aboutSection.classList.add("in_view");
-  }, false);
-  // aboutButton.addEventListener("close", function(event) {
-  //   aboutSection.classList.add("in_view");
-  // }, false);
+    aboutSection.classList.add("in_view")
+    nav.classList.add("cover-page")
+    main.classList.add("cover-page-main")
+  }, false)
 
   closeAbout.addEventListener("click", function(event) {
-    aboutSection.classList.remove("in_view");
-  }, false);
+    aboutSection.classList.remove("in_view")
+    nav.classList.remove("cover-page")
+    main.classList.remove("cover-page-main")
+
+  }, false)
 
 
 
