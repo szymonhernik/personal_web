@@ -63,6 +63,7 @@ body
 
 
       section.about
+        color: #00ff00
         h1
           font-size: 2.2vw
 
@@ -83,6 +84,7 @@ body
       right: 0
       top: 0
       width: auto
+      z-index: 100
 
       h1
         float: right
@@ -91,16 +93,24 @@ body
 
 
       section.about_info
-        top: 10px
-        width: 25vw
+        top: 30px
+        width: 50vw
         display: none
         position: absolute
-        right: 30vw
+        right: 16vw
+
+
 
         p
-          font-size: .8em
+          font-size: 2.2vw
           letter-spacing: .02em
-
+          z-index: 200
+          &.first
+            &::first-letter
+              color: transparent
+              float: left
+              font-size: 2.2em
+              margin: .6em 1.5em 0 0
           a
             text-decoration: underline
             cursor: pointer
@@ -110,12 +120,13 @@ body
           display: block
 
         span.close
+          font-size: 2.2vw
           width: 30px
           height: 30px
           cursor: pointer
           position: absolute
           top: 0
-          left: -30px
+          left: 0
 
 
 
@@ -130,6 +141,7 @@ body
         right: 00vw
         width: 350px
         display: none
+        z-index: 0
       &-left
         top: 60vh
         left: 5vw
@@ -143,6 +155,9 @@ body
     section.document
       padding-top: 12vw
       margin-left: 45vw
+      &_covered
+        height: 100vh
+        overflow-y: scroll
 
       .project
         margin-bottom: 30px
@@ -169,7 +184,7 @@ body
           height: auto
           // background-color: white
 
-          iframe
+          .vimeo
             width: 100%
             height: auto
             margin-bottom: 5px

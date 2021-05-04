@@ -7,6 +7,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
   let aboutButton = document.getElementById("about-switch")
   let aboutSection = document.getElementById("about-section")
   let closeAbout = document.getElementById("about-close")
+  let documentPage = document.getElementById("document")
   let nav = document.querySelector("nav")
   let main = document.querySelector("main")
 
@@ -20,12 +21,15 @@ window.addEventListener('DOMContentLoaded', (event) => {
       nav.classList.add("cover-page")
       main.classList.add("cover-page-main")
       drawingFace.classList.add("hi-2-u-left-higher")
+      documentPage.classList.add("document_covered")
     }, false)
     closeAbout.addEventListener("click", function(event) {
       drawing.classList.remove("in_view")
       nav.classList.remove("cover-page")
       main.classList.remove("cover-page-main")
       drawingFace.classList.remove("hi-2-u-left-higher")
+      documentPage.classList.remove("document_covered")
+
 
 
     }, false)
@@ -35,12 +39,14 @@ window.addEventListener('DOMContentLoaded', (event) => {
     aboutSection.classList.add("in_view")
     nav.classList.add("cover-page")
     main.classList.add("cover-page-main")
+    documentPage.classList.add("document_covered")
   }, false)
 
   closeAbout.addEventListener("click", function(event) {
     aboutSection.classList.remove("in_view")
     nav.classList.remove("cover-page")
     main.classList.remove("cover-page-main")
+    documentPage.classList.remove("document_covered")
 
   }, false)
 

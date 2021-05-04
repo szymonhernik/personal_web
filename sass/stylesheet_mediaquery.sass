@@ -26,7 +26,7 @@ $desktop: 1024px
 
       section.about_right
         left: 0
-        top: 30vw
+        top: 33vw
         height: 150vh
         display: block
         position: absolute
@@ -46,17 +46,16 @@ $desktop: 1024px
           height: 100vh
           z-index: 10
 
-          &::first-letter
-            color: transparent
-            float: left
-            font-size: 5em
-            margin: .6em .6em 0 0
-
-
-
           p
             font-size: 5vw
             line-height: 1.1em
+
+            &.first
+              &::first-letter
+                color: transparent
+                float: left
+                font-size: 5em
+                margin: .6em .6em 0 0
 
           span.close
             font-size: 1.8em
@@ -122,13 +121,13 @@ $desktop: 1024px
       nav
         section.about
 
-          &_left
-            width: 35vw
-          h1
-            font-size: 2.6vw
-
-          &_info
-            width: 30vw
+          // &_left
+          //   width: 35vw
+          // h1
+          //   font-size: 2.6vw
+          //
+          // &_info
+          //   width: 30vw
 
       section.document
         margin-left: 38vw

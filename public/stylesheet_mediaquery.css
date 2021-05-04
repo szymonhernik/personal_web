@@ -13,7 +13,7 @@
         font-size: 5vw; }
   body main section.about_right {
     left: 0;
-    top: 30vw;
+    top: 33vw;
     height: 150vh;
     display: block;
     position: absolute;
@@ -28,14 +28,14 @@
       left: 15px;
       height: 100vh;
       z-index: 10; }
-      body main section.about_right section.about_info::first-letter {
-        color: transparent;
-        float: left;
-        font-size: 5em;
-        margin: .6em .6em 0 0; }
       body main section.about_right section.about_info p {
         font-size: 5vw;
         line-height: 1.1em; }
+        body main section.about_right section.about_info p.first::first-letter {
+          color: transparent;
+          float: left;
+          font-size: 5em;
+          margin: .6em .6em 0 0; }
       body main section.about_right section.about_info span.close {
         font-size: 1.8em;
         top: 1px;
@@ -69,12 +69,6 @@
       width: 100%; } }
 
 @media only screen and (min-width: 540px) and (max-width: 768px) {
-  body main nav section.about_left {
-    width: 35vw; }
-  body main nav section.about h1 {
-    font-size: 2.6vw; }
-  body main nav section.about_info {
-    width: 30vw; }
   body main section.document {
     margin-left: 38vw; }
   body main img.hi-2-u-left {
