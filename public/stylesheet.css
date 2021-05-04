@@ -1,0 +1,91 @@
+@font-face {
+  font-family: Gramatika;
+  src: url(fonts/GramatikaRegular.woff); }
+
+@font-face {
+  font-family: Gramatika_Italic;
+  src: url(fonts/GramatikaSlanted.woff); }
+
+@font-face {
+  font-family: Gramatika_Bold;
+  src: url(fonts/GramatikaBold.woff); }
+
+@font-face {
+  font-family: Gramatika_Bold_Italic;
+  src: url(fonts/GramatikaBoldSlanted.woff); }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font: 100% "Gramatika_Bold", sans-serif;
+  background-color: white;
+  color: black;
+  width: 100vw;
+  overflow-x: hidden; }
+  body .page {
+    margin-top: 30vw;
+    width: 100vw;
+    transform: skewX(2.5deg) translateX(50px); }
+    body .page .project {
+      width: 100vw;
+      display: flex;
+      flex-direction: row;
+      overflow-x: hidden; }
+
+.project {
+  margin: 20px 0; }
+  .project .slider {
+    flex-shrink: 0;
+    flex-grow: 1;
+    width: auto;
+    overflow-y: hidden; }
+    .project .slider-one-el .el {
+      width: 70vw; }
+    .project .slider-mult-el {
+      height: 50vh; }
+      .project .slider-mult-el .el {
+        width: 40vw; }
+    .project .slider .el {
+      object-fit: cover;
+      display: inline-block;
+      height: calc(100% - 20px);
+      background-color: lightgrey; }
+      .project .slider .el video {
+        width: 100%; }
+      .project .slider .el img {
+        width: 100%; }
+
+#content {
+  position: relative;
+  display: flex; }
+  #content:hover #caption {
+    display: block;
+    top: 0;
+    left: 0; }
+  #content #caption {
+    position: absolute;
+    display: none;
+    z-index: 10;
+    font-size: 2em; }
+  #content ul {
+    list-style: none; }
+    #content ul li {
+      width: 50vw;
+      height: 35vw;
+      display: none;
+      justify-content: flex-start;
+      align-items: center;
+      overflow: hidden; }
+      #content ul li.green {
+        background-color: green; }
+      #content ul li.active {
+        display: flex; }
+      #content ul li video {
+        height: 100%; }
+      #content ul li img {
+        max-height: 100%;
+        max-width: 100%; }
+        #content ul li img.portrait {
+          padding-left: 40px; }
