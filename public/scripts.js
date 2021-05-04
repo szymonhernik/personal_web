@@ -1,6 +1,9 @@
 window.addEventListener('DOMContentLoaded', (event) => {
   console.log('DOM fully loaded and parsed');
 
+  // ABOUT BUTTON SHOW AND CLOSE //
+  // ABOUT BUTTON SHOW AND CLOSE //
+
   let aboutButton = document.getElementById("about-button")
   let aboutSection = document.getElementById("about-section")
   let closeAbout = document.getElementById("about-close")
@@ -8,11 +11,16 @@ window.addEventListener('DOMContentLoaded', (event) => {
   aboutButton.addEventListener("mouseover", function(event) {
     aboutSection.classList.add("in_view");
   }, false);
+  aboutButton.addEventListener("close", function(event) {
+    aboutSection.classList.add("in_view");
+  }, false);
 
   closeAbout.addEventListener("click", function(event) {
     aboutSection.classList.remove("in_view");
   }, false);
 
+  // END OF ABOUT BUTTON SHOW AND CLOSE //
+  // END OF ABOUT BUTTON SHOW AND CLOSE //
 
 
 });
