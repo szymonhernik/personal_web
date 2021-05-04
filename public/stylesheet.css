@@ -55,6 +55,10 @@ body {
           body main nav section.about_info p {
             font-size: .8em;
             letter-spacing: .02em; }
+            body main nav section.about_info p a {
+              text-decoration: underline;
+              cursor: pointer;
+              color: blue; }
           body main nav section.about_info.in_view {
             display: block; }
           body main nav section.about_info span.close {
@@ -64,3 +68,36 @@ body {
             position: absolute;
             top: 0;
             left: -30px; }
+
+body main img.hi-2-u {
+  position: fixed; }
+  body main img.hi-2-u-right {
+    bottom: 0;
+    right: 00vw;
+    width: 350px;
+    display: none; }
+  body main img.hi-2-u-left {
+    top: 60vh;
+    left: 5vw;
+    width: 15vw; }
+  body main img.hi-2-u.in_view {
+    display: block; }
+
+body main section.document {
+  margin-top: 12vw;
+  margin-left: 32vw; }
+  body main section.document .project h3 {
+    font-size: .9em; }
+    body main section.document .project h3:nth-child(1) {
+      color: blue;
+      text-decoration: underline; }
+    body main section.document .project h3:last-of-type {
+      margin-bottom: 5px; }
+  body main section.document .project .element {
+    border: 1px black solid;
+    width: 50vw;
+    min-height: 90vh;
+    height: auto; }
+    body main section.document .project .element img {
+      width: 20px;
+      height: auto; }

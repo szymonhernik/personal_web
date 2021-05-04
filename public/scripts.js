@@ -8,19 +8,34 @@ window.addEventListener('DOMContentLoaded', (event) => {
   let aboutSection = document.getElementById("about-section")
   let closeAbout = document.getElementById("about-close")
 
+  let drawings = document.querySelectorAll(".hi-2-u")
+
+  document.querySelectorAll(".hi-2-u-right").forEach((drawing) => {
+    aboutButton.addEventListener("mouseover", function(event) {
+      drawing.classList.add("in_view");
+    }, false);
+    aboutButton.addEventListener("click", function(event) {
+      drawing.classList.remove("in_view");
+    }, false);
+  })
+
   aboutButton.addEventListener("mouseover", function(event) {
     aboutSection.classList.add("in_view");
   }, false);
-  aboutButton.addEventListener("close", function(event) {
-    aboutSection.classList.add("in_view");
-  }, false);
+  // aboutButton.addEventListener("close", function(event) {
+  //   aboutSection.classList.add("in_view");
+  // }, false);
 
   closeAbout.addEventListener("click", function(event) {
     aboutSection.classList.remove("in_view");
   }, false);
 
+
+
   // END OF ABOUT BUTTON SHOW AND CLOSE //
   // END OF ABOUT BUTTON SHOW AND CLOSE //
+
+
 
 
 });

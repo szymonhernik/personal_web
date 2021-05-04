@@ -25,6 +25,8 @@ $font-stack: 'Gramatika_Bold', sans-serif
   padding: 0
 
 
+
+
 body
   font: 100% $font-stack
   background-color: white
@@ -82,6 +84,11 @@ body
             font-size: .8em
             letter-spacing: .02em
 
+            a
+              text-decoration: underline
+              cursor: pointer
+              color: blue
+
           &.in_view
             display: block
 
@@ -92,6 +99,56 @@ body
             position: absolute
             top: 0
             left: -30px
+
+
+
+
+body
+  main
+    img.hi-2-u
+      position: fixed
+
+      &-right
+        bottom: 0
+        right: 00vw
+        width: 350px
+        display: none
+      &-left
+        top: 60vh
+        left: 5vw
+        width: 15vw
+      &.in_view
+        display: block
+
+
+body
+  main
+    section.document
+      margin-top: 12vw
+      margin-left: 32vw
+
+      .project
+        h3
+          font-size: .9em
+
+          &:nth-child(1)
+            color: blue
+            text-decoration: underline
+          &:last-of-type
+            margin-bottom: 5px
+
+
+
+        .element
+          // background-color: yellow
+          border: 1px black solid
+          width: 50vw
+          min-height: 90vh
+          height: auto
+
+          img
+            width: 20px
+            height: auto
 
 
 
