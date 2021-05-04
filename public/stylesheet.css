@@ -22,70 +22,44 @@ body {
   font: 100% "Gramatika_Bold", sans-serif;
   background-color: white;
   color: black;
-  width: 100vw;
-  overflow-x: hidden; }
-  body .page {
-    margin-top: 30vw;
-    width: 100vw;
-    transform: skewX(2.5deg) translateX(50px); }
-    body .page .project {
-      width: 100vw;
+  width: 100vw; }
+  body main {
+    height: 200vh; }
+    body main nav {
       display: flex;
-      flex-direction: row;
-      overflow-x: hidden; }
-
-.project {
-  margin: 20px 0; }
-  .project .slider {
-    flex-shrink: 0;
-    flex-grow: 1;
-    width: auto;
-    overflow-y: hidden; }
-    .project .slider-one-el .el {
-      width: 70vw; }
-    .project .slider-mult-el {
-      height: 50vh; }
-      .project .slider-mult-el .el {
-        width: 40vw; }
-    .project .slider .el {
-      object-fit: cover;
-      display: inline-block;
-      height: calc(100% - 20px);
-      background-color: lightgrey; }
-      .project .slider .el video {
-        width: 100%; }
-      .project .slider .el img {
-        width: 100%; }
-
-#content {
-  position: relative;
-  display: flex; }
-  #content:hover #caption {
-    display: block;
-    top: 0;
-    left: 0; }
-  #content #caption {
-    position: absolute;
-    display: none;
-    z-index: 10;
-    font-size: 2em; }
-  #content ul {
-    list-style: none; }
-    #content ul li {
-      width: 50vw;
-      height: 35vw;
-      display: none;
-      justify-content: flex-start;
-      align-items: center;
-      overflow: hidden; }
-      #content ul li.green {
-        background-color: green; }
-      #content ul li.active {
-        display: flex; }
-      #content ul li video {
-        height: 100%; }
-      #content ul li img {
-        max-height: 100%;
-        max-width: 100%; }
-        #content ul li img.portrait {
-          padding-left: 40px; }
+      position: relative; }
+      body main nav section {
+        position: fixed; }
+        body main nav section h1 {
+          font-size: 2.2vw; }
+          body main nav section h1 span.to-right {
+            display: inline-block;
+            float: right;
+            font-style: italic; }
+        body main nav section.left {
+          width: 26vw; }
+          body main nav section.left h1 {
+            margin: 30px 0  0 15px; }
+        body main nav section.right {
+          right: 0;
+          top: 0; }
+          body main nav section.right h1 {
+            float: right;
+            margin: 30px 15px  0 0;
+            cursor: default; }
+        body main nav section.middle {
+          top: 10px;
+          width: 25vw;
+          left: 50vw;
+          display: none; }
+          body main nav section.middle p {
+            font-size: .8em; }
+          body main nav section.middle.in_view {
+            display: block; }
+          body main nav section.middle span.close {
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            position: absolute;
+            top: 0;
+            left: -30px; }
