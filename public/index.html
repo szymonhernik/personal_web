@@ -15,6 +15,7 @@
 
 
 
+
 </head>
 
 <body>
@@ -37,8 +38,8 @@
         </div> -->
         <div class="element">
           <img class="pic-smaller-1" src="img/sierra/sierra_cover.png" alt="">
-          <img src="img/sierra/sierra_opening_spread.png" alt="">
-          <img class="pic-smaller-1" src="img/sierra/sierra_poster.jpg" alt="">
+          <img class="lazy" src="img/sierra/sierra_opening_spread.png" alt="">
+          <img class="pic-smaller-1 lazy" src="img/sierra/sierra_poster.jpg" alt="">
         </div>
         <h3><a href="projects/Santiago-Sierra.html">more...</a></h3>
       </div>
@@ -50,10 +51,19 @@
         <h3><a href="projects/Python-Script.html">Python script for variable type</a></h3>
         <h3>Type Design, Programming</h3>
         <div class="element">
-
-
-          <img class="" src="img/python-type/python-animated.gif" alt="">
-
+          <img class="lazy" src="img/python-type/python-animated.gif" alt="">
+        </div>
+        <div class="element">
+          <img class="pic-smaller-0 lazy" src="img/python-type/py_bbs.png" alt="">
+        </div>
+        <div class="element">
+          <img class="lazy" src="img/python-type/py_many_1.png" alt="">
+        </div>
+        <div class="element">
+          <img class="lazy" src="img/python-type/py_many_2.png" alt="">
+        </div>
+        <div class="element">
+          <img class="pic-smaller-1 lazy" src="img/python-type/S8.gif" alt="">
         </div>
         <h3><a href="projects/Python-Script.html">more...</a></h3>
       </div>
@@ -64,21 +74,54 @@
       <div class="project">
         <h3><a href="projects/Noise-Silence-Sign.html">Noise / Silence Sign</a></h3>
         <h3>Research, Mixed Media, Book Design</h3>
-        <!-- <div class="element">
-          <img src="img/imeg.jpeg" alt="">
-        </div> -->
         <div class="element">
-          <img class="pic-smaller-2" src="img/noisi/noise-silence-cover.jpg" alt="">
-          <div class="vimeo" style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/545244631?badge=0&amp;autoplay=1&amp;player_id=0&amp;app_id=58479&muted=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"
-              allow="autoplay; fullscreen; picture-in-picture" muted></iframe></div>
-          <script src="https://player.vimeo.com/api/player.js"></script>
+          <img src="img/imeg.jpeg lazy" alt="">
+        </div>
+        <div class="element">
+          <img class="pic-smaller-2 lazy" src="img/noisi/noise-silence-cover.jpg" alt="">
+          <div class="vimeo lazy" style="padding:56.25% 0 0 0;position:relative;"><iframe class="lazy" src="https://player.vimeo.com/video/545244631?badge=0&amp;autoplay=1&amp;player_id=0&amp;app_id=58479&muted=1&loop=1"
+              style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" muted></iframe></div>
 
-          <img class="" src="img/noisi/noise-silence-spread.jpg" alt="">
-          <img class="" src="img/noisi/noise-silence-print.png" alt="">
-          <img class="" src="img/noisi/noisi_1.jpg" alt="">
-          <img class="" src="img/noisi/noise-silence-spread-2.jpg" alt="">
+          <img class="lazy" src="img/noisi/noise-silence-spread.jpg" alt="">
+          <img class="lazy" src="img/noisi/noise-silence-print.png" alt="">
+          <img class="lazy" src="img/noisi/noisi_1.jpg" alt="">
+          <img class="lazy" src="img/noisi/noise-silence-spread-2.jpg" alt="">
         </div>
         <h3><a href="projects/Noise-Silence-Sign.html">more...</a></h3>
+      </div>
+
+      <!-- Nourishment of identity -->
+      <!-- Nourishment of identity -->
+      <!-- Nourishment of identity -->
+
+      <div class="project">
+        <h3><a href="projects/Nourishment-of-Identity.html">Nourishment of identity</a></h3>
+        <h3>Installation, Image</h3>
+        <div class="element">
+          <a href="projects/Nourishment-of-Identity.html"> <img class="lazy" src="img/nourishment/nourishment-of-identity-installation.png" alt=""></a>
+          <a href="projects/Nourishment-of-Identity.html"> <img class="pic-smaller-2 lazy" src="img/nourishment/nourishment-of-identity-installation_2.jpg" alt=""></a>
+
+
+        </div>
+        <h3><a href="projects/Nourishment-of-Identity.html">more...</a></h3>
+      </div>
+
+      <!-- Website for the collective beuys bois -->
+
+      <div class="project">
+        <h3><a href="projects/beuys-bois.html">Website for the collective beuys bois</a></h3>
+        <h3>Web Design and Development</h3>
+        <div class="element">
+          <a href="projects/beuys-bois.html">
+            <video calss="lazy" autoplay loop muted>
+              <source src="img/beuysbois/beuysbois-web.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </a>
+
+
+        </div>
+        <h3><a href="projects/beuys-bois.html">more...</a></h3>
       </div>
 
 
@@ -131,6 +174,25 @@
 
 
   </main>
+  <!-- LAZY LOAD VANILA JS LIBRARY -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.1/dist/lazyload.min.js"></script>
+  <script src="scripts-image_handling.js" charset="utf-8"></script> -->
+  <script src="https://player.vimeo.com/api/player.js"></script>
+
+
+  <script type="text/javascript">
+    window.addEventListener('scroll', function(e) {
+      //set scroll position in session storage
+      sessionStorage.scrollPos = window.pageYOffset
+      // console.log(window.pageYOffset);
+    });
+    var init = function() {
+      //get scroll position in session storage
+      window.scrollTo(0, sessionStorage.scrollPos || 0 )
+      // console.log(sessionStorage.scrollPos);
+    };
+    window.onload = init;
+  </script>
 
 
 </body>

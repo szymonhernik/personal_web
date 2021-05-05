@@ -32,6 +32,7 @@ body
   color: black
   width: 100vw
   position: relative
+  overflow-x: hidden
 
   main
     height: 200vh
@@ -166,7 +167,7 @@ body
 
           &:nth-child(1)
             color: blue
-            cursor: pointer
+            cursor: alias
             text-decoration: underline
           &:nth-child(2)
             // margin-bottom: 10px
@@ -175,7 +176,9 @@ body
             cursor: pointer
             text-decoration: underline
           a
+            cursor: alias
             &:visited
+
               text-decoration: none
               color: blue
 
@@ -189,12 +192,23 @@ body
         .element
 
           height: auto
+          // cursor: alias
 
           .vimeo
             width: 100%
             height: auto
             margin-bottom: 5px
 
+          video
+            width: 100%
+            height: auto
+            margin-bottom: 5px
+
+          a
+            img
+              cursor: alias
+            video
+              cursor: alias
 
           img
             width: 100%
@@ -204,6 +218,9 @@ body
             &.inline-images
               width: 40%
               display: inline-block
+
+            &.pic-smaller-0
+              width: 50%
 
             &.pic-smaller-1
               width: 70%
@@ -215,7 +232,7 @@ body
 main
   div.back
     position: fixed
-    left: 38vw
+    left: 45vw
     top: 30px
     font-size: 2.2vw
     a
@@ -261,6 +278,9 @@ main
         width: 100%
         margin-bottom: 10px
 
+        a
+          color: blue
+
 
       .element
 
@@ -271,10 +291,15 @@ main
           height: auto
           margin-bottom: 5px
 
+        video
+          width: 100%
+          height: auto
+          margin-bottom: 5px
 
         img
           width: 100%
           height: auto
+          min-height: 30vh
           margin-bottom: 5px
 
           &.inline-images
