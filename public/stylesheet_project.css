@@ -20,7 +20,7 @@
 
 body {
   font: 100% "Gramatika_Bold", sans-serif;
-  background-color: white;
+  background-color: yellow;
   color: black;
   width: 100vw;
   position: relative; }
@@ -150,51 +150,4 @@ body main section.document {
         body main section.document .project .element img.pic-smaller-1 {
           width: 70%; }
         body main section.document .project .element img.pic-smaller-2 {
-          width: 86%; }
-
-section.document-project {
-  width: 50vw;
-  padding-top: 30px;
-  margin-left: 34vw; }
-  section.document-project_covered {
-    height: 100vh;
-    overflow-y: scroll; }
-  section.document-project .project {
-    margin-bottom: 30px;
-    width: 50vw; }
-    section.document-project .project h3 {
-      font-size: .9em; }
-      section.document-project .project h3:nth-child(1) {
-        color: black;
-        cursor: default;
-        text-decoration: underline; }
-      section.document-project .project h3:last-of-type {
-        cursor: default; }
-      section.document-project .project h3 a {
-        color: black;
-        cursor: default; }
-        section.document-project .project h3 a:visited {
-          text-decoration: none;
-          color: black; }
-    section.document-project .project p {
-      font-size: .9em;
-      margin-top: 10px;
-      width: 90%;
-      margin-bottom: 10px; }
-    section.document-project .project .element {
-      height: auto; }
-      section.document-project .project .element .vimeo {
-        width: 100%;
-        height: auto;
-        margin-bottom: 5px; }
-      section.document-project .project .element img {
-        width: 100%;
-        height: auto;
-        margin-bottom: 5px; }
-        section.document-project .project .element img.inline-images {
-          width: 40%;
-          display: inline-block; }
-        section.document-project .project .element img.pic-smaller-1 {
-          width: 70%; }
-        section.document-project .project .element img.pic-smaller-2 {
           width: 86%; }

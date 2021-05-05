@@ -28,7 +28,7 @@ $font-stack: 'Gramatika_Bold', sans-serif
 
 body
   font: 100% $font-stack
-  background-color: white
+  background-color: yellow
   color: black
   width: 100vw
   position: relative
@@ -151,16 +151,18 @@ body
     section.document
       padding-top: 12vw
       margin-left: 45vw
-
       &_covered
         height: 100vh
         overflow-y: scroll
+
 
 
       .project
         margin-bottom: 30px
         width: 40vw
 
+        &-whole
+          width: 50vw
         h3
           font-size: .9em
 
@@ -210,70 +212,3 @@ body
 
             &.pic-smaller-2
               width: 86%
-
-
-section.document-project
-  width: 50vw
-  padding-top: 30px
-  margin-left: 34vw
-
-  &_covered
-    height: 100vh
-    overflow-y: scroll
-
-
-  .project
-    margin-bottom: 30px
-    width: 50vw
-
-    h3
-      font-size: .9em
-
-      &:nth-child(1)
-        color: black
-        cursor: default
-        text-decoration: underline
-      &:nth-child(2)
-        // margin-bottom: 10px
-      &:last-of-type
-        // color: blue
-        cursor: default
-        // text-decoration: underline
-      a
-        color: black
-        cursor: default
-        &:visited
-          text-decoration: none
-          color: black
-
-    p
-      font-size: .9em
-      margin-top: 10px
-      width: 90%
-      margin-bottom: 10px
-
-
-    .element
-
-      height: auto
-
-      .vimeo
-        width: 100%
-        height: auto
-        margin-bottom: 5px
-
-
-      img
-        width: 100%
-        height: auto
-        margin-bottom: 5px
-
-        &.inline-images
-          width: 40%
-          display: inline-block
-
-        &.pic-smaller-1
-          width: 70%
-
-        &.pic-smaller-2
-          width: 86%
