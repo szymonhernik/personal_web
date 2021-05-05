@@ -171,9 +171,9 @@ body
             text-decoration: underline
           &:nth-child(2)
             // margin-bottom: 10px
-          &:last-of-type
+          &:nth-child(3)
             color: blue
-            cursor: pointer
+            // cursor: pointer
             text-decoration: underline
           a
             cursor: alias
@@ -183,10 +183,11 @@ body
               color: blue
 
         p
-          font-size: 1.1em
+          font-size: .9em
           margin-top: 10px
-          width: 90%
+          width: 100%
           margin-bottom: 10px
+
 
 
         .element
@@ -204,6 +205,9 @@ body
             height: auto
             margin-bottom: 5px
 
+            &.vid-smaller-1
+              width: 80%
+
           a
             img
               cursor: alias
@@ -214,6 +218,8 @@ body
             width: 100%
             height: auto
             margin-bottom: 5px
+            &.pic-small
+              width: 50%
 
             &.inline-images
               width: 40%
@@ -221,12 +227,20 @@ body
 
             &.pic-smaller-0
               width: 50%
+            &.pic-smaller-3
+              width: 50%
+
+            &.pic-smaller-5
+              width: 30%
 
             &.pic-smaller-1
               width: 70%
+            &.pic-smaller-4
+              width: 80%
+            &.pic-bigger-1
+              width: 110%
 
-            &.pic-smaller-2
-              width: 86%
+
 
 
 main
@@ -236,6 +250,7 @@ main
     top: 30px
     font-size: 2.2vw
     a
+      cursor: pointer
       color: blue
       text-decoration: underline
 
@@ -250,7 +265,8 @@ main
 
     .project
       margin-bottom: 30px
-      width: calc(55vw - 15px)
+      width: calc(55vw - 30px)
+
 
       h3
         font-size: .9em
@@ -296,11 +312,32 @@ main
           height: auto
           margin-bottom: 5px
 
+
+
         img
           width: 100%
           height: auto
           min-height: 30vh
           margin-bottom: 5px
+
+          &.pic-small
+            width: 50%
+
+          &.inline-images
+            width: 40%
+            display: inline-block
+
+          &.pic-smaller-3
+            width: 50%
+
+          &.pic-smaller-5
+            width: 30%
+
+          &.pic-smaller-1
+            width: 70%
+
+          &.pic-bigger-1
+            width: 100%
 
           &.inline-images
             width: 40%

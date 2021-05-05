@@ -60,6 +60,12 @@ window.addEventListener('DOMContentLoaded', (event) => {
   // END OF ABOUT BUTTON SHOW AND CLOSE //
   // END OF ABOUT BUTTON SHOW AND CLOSE //
 
+  function goBack() {
+    window.history.back();
+  }
+  document.getElementById("back").addEventListener("click", goBack, false)
+
+
 
 
 

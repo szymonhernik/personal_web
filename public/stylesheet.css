@@ -123,9 +123,8 @@ body main section.document {
         color: blue;
         cursor: alias;
         text-decoration: underline; }
-      body main section.document .project h3:last-of-type {
+      body main section.document .project h3:nth-child(3) {
         color: blue;
-        cursor: pointer;
         text-decoration: underline; }
       body main section.document .project h3 a {
         cursor: alias; }
@@ -133,9 +132,9 @@ body main section.document {
           text-decoration: none;
           color: blue; }
     body main section.document .project p {
-      font-size: 1.1em;
+      font-size: .9em;
       margin-top: 10px;
-      width: 90%;
+      width: 100%;
       margin-bottom: 10px; }
     body main section.document .project .element {
       height: auto; }
@@ -147,6 +146,8 @@ body main section.document {
         width: 100%;
         height: auto;
         margin-bottom: 5px; }
+        body main section.document .project .element video.vid-smaller-1 {
+          width: 80%; }
       body main section.document .project .element a img {
         cursor: alias; }
       body main section.document .project .element a video {
@@ -155,15 +156,23 @@ body main section.document {
         width: 100%;
         height: auto;
         margin-bottom: 5px; }
+        body main section.document .project .element img.pic-small {
+          width: 50%; }
         body main section.document .project .element img.inline-images {
           width: 40%;
           display: inline-block; }
         body main section.document .project .element img.pic-smaller-0 {
           width: 50%; }
+        body main section.document .project .element img.pic-smaller-3 {
+          width: 50%; }
+        body main section.document .project .element img.pic-smaller-5 {
+          width: 30%; }
         body main section.document .project .element img.pic-smaller-1 {
           width: 70%; }
-        body main section.document .project .element img.pic-smaller-2 {
-          width: 86%; }
+        body main section.document .project .element img.pic-smaller-4 {
+          width: 80%; }
+        body main section.document .project .element img.pic-bigger-1 {
+          width: 110%; }
 
 main div.back {
   position: fixed;
@@ -171,6 +180,7 @@ main div.back {
   top: 30px;
   font-size: 2.2vw; }
   main div.back a {
+    cursor: pointer;
     color: blue;
     text-decoration: underline; }
 
@@ -182,7 +192,7 @@ main section.document-project {
     overflow-y: scroll; }
   main section.document-project .project {
     margin-bottom: 30px;
-    width: calc(55vw - 15px); }
+    width: calc(55vw - 30px); }
     main section.document-project .project h3 {
       font-size: .9em; }
       main section.document-project .project h3:nth-child(1) {
@@ -219,6 +229,19 @@ main section.document-project {
         height: auto;
         min-height: 30vh;
         margin-bottom: 5px; }
+        main section.document-project .project .element img.pic-small {
+          width: 50%; }
+        main section.document-project .project .element img.inline-images {
+          width: 40%;
+          display: inline-block; }
+        main section.document-project .project .element img.pic-smaller-3 {
+          width: 50%; }
+        main section.document-project .project .element img.pic-smaller-5 {
+          width: 30%; }
+        main section.document-project .project .element img.pic-smaller-1 {
+          width: 70%; }
+        main section.document-project .project .element img.pic-bigger-1 {
+          width: 100%; }
         main section.document-project .project .element img.inline-images {
           width: 40%;
           display: inline-block; }
