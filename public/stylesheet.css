@@ -152,49 +152,57 @@ body main section.document {
         body main section.document .project .element img.pic-smaller-2 {
           width: 86%; }
 
-section.document-project {
-  width: 50vw;
-  padding-top: 30px;
-  margin-left: 34vw; }
-  section.document-project_covered {
+main div.back {
+  position: fixed;
+  left: 38vw;
+  top: 30px;
+  font-size: 2.2vw; }
+  main div.back a {
+    color: blue;
+    text-decoration: underline; }
+
+main section.document-project {
+  padding-top: 12vw;
+  margin-left: 45vw; }
+  main section.document-project_covered {
     height: 100vh;
     overflow-y: scroll; }
-  section.document-project .project {
+  main section.document-project .project {
     margin-bottom: 30px;
-    width: 50vw; }
-    section.document-project .project h3 {
+    width: calc(55vw - 15px); }
+    main section.document-project .project h3 {
       font-size: .9em; }
-      section.document-project .project h3:nth-child(1) {
+      main section.document-project .project h3:nth-child(1) {
         color: black;
         cursor: default;
         text-decoration: underline; }
-      section.document-project .project h3:last-of-type {
+      main section.document-project .project h3:last-of-type {
         cursor: default; }
-      section.document-project .project h3 a {
+      main section.document-project .project h3 a {
         color: black;
         cursor: default; }
-        section.document-project .project h3 a:visited {
+        main section.document-project .project h3 a:visited {
           text-decoration: none;
           color: black; }
-    section.document-project .project p {
+    main section.document-project .project p {
       font-size: .9em;
       margin-top: 10px;
-      width: 90%;
+      width: 100%;
       margin-bottom: 10px; }
-    section.document-project .project .element {
+    main section.document-project .project .element {
       height: auto; }
-      section.document-project .project .element .vimeo {
+      main section.document-project .project .element .vimeo {
         width: 100%;
         height: auto;
         margin-bottom: 5px; }
-      section.document-project .project .element img {
+      main section.document-project .project .element img {
         width: 100%;
         height: auto;
         margin-bottom: 5px; }
-        section.document-project .project .element img.inline-images {
+        main section.document-project .project .element img.inline-images {
           width: 40%;
           display: inline-block; }
-        section.document-project .project .element img.pic-smaller-1 {
+        main section.document-project .project .element img.pic-smaller-1 {
           width: 70%; }
-        section.document-project .project .element img.pic-smaller-2 {
+        main section.document-project .project .element img.pic-smaller-2 {
           width: 86%; }
