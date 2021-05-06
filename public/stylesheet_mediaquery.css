@@ -57,11 +57,10 @@
     body main img.hi-2-u.in_view {
       display: none; }
   body main section.document {
-    width: calc(100vw - 30px);
+    width: calc(100vw - 45px);
     padding-top: 50vh;
     margin-left: 15px;
-    margin-right: 15px;
-    height: 0; }
+    margin-right: 15px; }
     body main section.document .project {
       width: 100%; }
       body main section.document .project h3 {
@@ -71,6 +70,8 @@
           text-decoration: underline; }
       body main section.document .project .element {
         width: 100%; }
+        body main section.document .project .element img.pic-bigger-1 {
+          width: 100%; }
   main div.back {
     position: fixed;
     right: 15px;
@@ -80,11 +81,10 @@
     main div.back a {
       float: right; }
   main section.document-project {
-    width: calc(100vw - 30px);
+    width: calc(100vw - 45px);
     padding-top: 50vh;
     margin-left: 15px;
-    margin-right: 15px;
-    height: 0; }
+    margin-right: 15px; }
     main section.document-project .project {
       width: 100%; }
       main section.document-project .project h3 {
@@ -95,7 +95,9 @@
       main section.document-project .project .element {
         width: 100%; }
         main section.document-project .project .element img {
-          width: 100%; } }
+          width: 100%; }
+          main section.document-project .project .element img.pic-bigger-1 {
+            width: 100%; } }
 
 @media only screen and (min-width: 540px) and (max-width: 768px) {
   body main section.document {

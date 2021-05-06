@@ -63,7 +63,9 @@ window.addEventListener('DOMContentLoaded', (event) => {
   function goBack() {
     window.history.back();
   }
-  document.getElementById("back").addEventListener("click", goBack, false)
+  if(document.getElementById("back")) {
+    document.getElementById("back").addEventListener("click", goBack, false)
+  }
 
 
 

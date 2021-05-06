@@ -17,12 +17,14 @@
 
 
 $font-stack: 'Gramatika_Bold', sans-serif
+$font-stack-italic: 'Gramatika_Bold_Italic', sans-serif
 
 *
   margin: 0
   padding: 0
 
-
+i
+  font: 100% $font-stack-italic !important
 
 
 
@@ -207,6 +209,8 @@ body
 
             &.vid-smaller-1
               width: 80%
+            &.vid-bigger-1
+              width: 115%
 
           a
             img
@@ -256,7 +260,7 @@ main
 
   section.document-project
     padding-top: 12vw
-    margin-left: 45vw
+    margin-left: 30vw
 
     &_covered
       height: 100vh
@@ -265,7 +269,7 @@ main
 
     .project
       margin-bottom: 30px
-      width: calc(55vw - 30px)
+      width: calc(58vw)
 
 
       h3
@@ -311,6 +315,11 @@ main
           width: 100%
           height: auto
           margin-bottom: 5px
+
+          &.vid-smaller-1
+            width: 80%
+          &.vid-smaller-2
+            width: 50%
 
 
 
