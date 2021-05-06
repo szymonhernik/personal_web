@@ -151,6 +151,8 @@ body main section.document {
         margin-bottom: 5px; }
         body main section.document .project .element video.vid-smaller-1 {
           width: 80%; }
+        body main section.document .project .element video.vid-smaller-2 {
+          width: 60%; }
         body main section.document .project .element video.vid-bigger-1 {
           width: 115%; }
       body main section.document .project .element a img {
@@ -247,10 +249,6 @@ main section.document-project {
           width: 50%; }
         main section.document-project .project .element img.pic-smaller-5 {
           width: 30%; }
-        main section.document-project .project .element img.pic-smaller-1 {
-          width: 70%; }
-        main section.document-project .project .element img.pic-bigger-1 {
-          width: 100%; }
         main section.document-project .project .element img.inline-images {
           width: 40%;
           display: inline-block; }
