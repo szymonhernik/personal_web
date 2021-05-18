@@ -19,6 +19,28 @@
 $font-stack: 'Gramatika_Bold', sans-serif
 $font-stack-italic: 'Gramatika_Bold_Italic', sans-serif
 
+
+
+
+.cube__face--front
+   transform: rotateY(  0deg) translateZ(100px)
+.cube__face--right
+   transform: rotateY( 90deg) translateZ(100px)
+.cube__face--back
+   transform: rotateY(180deg) translateZ(100px)
+.cube__face--left
+   transform: rotateY(-90deg) translateZ(100px)
+.cube__face--top
+   transform: rotateX( 90deg) translateZ(100px)
+.cube__face--bottom
+   transform: rotateX(-90deg) translateZ(100px)
+
+
+
+
+
+
+
 *
   margin: 0
   padding: 0
@@ -217,11 +239,15 @@ body
           a
             img
               cursor: alias
+
             video
               cursor: alias
+          video
+            min-height: 30vh
 
           img
             width: 100%
+            min-height: 30vh
             height: auto
             margin-bottom: 5px
             &.pic-small
@@ -317,6 +343,7 @@ main
           width: 100%
           height: auto
           margin-bottom: 5px
+          min-height: 30vh
 
           &.vid-smaller-1
             width: 80%
@@ -353,3 +380,6 @@ main
 
           &.pic-smaller-2
             width: 86%
+
+.vp-center
+  justify-content: flex-start !important

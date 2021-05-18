@@ -14,6 +14,24 @@
   font-family: Gramatika_Bold_Italic;
   src: url(fonts/GramatikaBoldSlanted.woff); }
 
+.cube__face--front {
+  transform: rotateY(0deg) translateZ(100px); }
+
+.cube__face--right {
+  transform: rotateY(90deg) translateZ(100px); }
+
+.cube__face--back {
+  transform: rotateY(180deg) translateZ(100px); }
+
+.cube__face--left {
+  transform: rotateY(-90deg) translateZ(100px); }
+
+.cube__face--top {
+  transform: rotateX(90deg) translateZ(100px); }
+
+.cube__face--bottom {
+  transform: rotateX(-90deg) translateZ(100px); }
+
 * {
   margin: 0;
   padding: 0; }
@@ -159,8 +177,11 @@ body main section.document {
         cursor: alias; }
       body main section.document .project .element a video {
         cursor: alias; }
+      body main section.document .project .element video {
+        min-height: 30vh; }
       body main section.document .project .element img {
         width: 100%;
+        min-height: 30vh;
         height: auto;
         margin-bottom: 5px; }
         body main section.document .project .element img.pic-small {
@@ -230,7 +251,8 @@ main section.document-project {
       main section.document-project .project .element video {
         width: 100%;
         height: auto;
-        margin-bottom: 5px; }
+        margin-bottom: 5px;
+        min-height: 30vh; }
         main section.document-project .project .element video.vid-smaller-1 {
           width: 80%; }
         main section.document-project .project .element video.vid-smaller-2 {
@@ -256,3 +278,6 @@ main section.document-project {
           width: 70%; }
         main section.document-project .project .element img.pic-smaller-2 {
           width: 86%; }
+
+.vp-center {
+  justify-content: flex-start !important; }
